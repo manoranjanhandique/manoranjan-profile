@@ -3020,16 +3020,11 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     }
 ]);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-// root.render(
-//     <React.StrictMode>
-//         <App />
-//     </React.StrictMode>
-// )
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
     router: appRouter
 }, void 0, false, {
     fileName: "src/index.js",
-    lineNumber: 45,
+    lineNumber: 40,
     columnNumber: 13
 }, undefined));
 

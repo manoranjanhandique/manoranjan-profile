@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "my profile website",
   "scripts": {
-    "start": "rmdir /s /q .parcel-cache && parcel public/index.html",
+    "start": "rmdir /s /q .parcel-cache && parcel index.html",
     "clear": "rmdir /s /q .parcel-cache",
     "build": "parcel build index.html"
   },
