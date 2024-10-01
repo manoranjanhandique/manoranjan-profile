@@ -4,8 +4,8 @@
   "description": "my profile website",
   "main": "index.js",
   "scripts": {
-    "start": "parcel public/index.html",
-    "cache-clear": "rmdir /s /q .parcel-cache"
+    "start": "rmdir /s /q .parcel-cache && parcel public/index.html",
+    "clear": "rmdir /s /q .parcel-cache"
   },
   "author": "Manoranjan Handique",
   "license": "ISC",

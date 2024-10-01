@@ -90,7 +90,7 @@ const Skills = () => {
                     ]}
                 />
                 <SkillCard
-                    title="Version Control:"
+                    title="Version Control"
                     skills={[
                     { name: 'Git', image: git },
                     { name: 'GitHub', image: github },

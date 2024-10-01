@@ -7,8 +7,9 @@ const Header=()=>{
                     <ul className="flex space-x-6 px-4">
                     <li className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page"><Link to="/">Home</Link></li>
                     <li className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"><Link to="/skills">Skills</Link></li>
-                    <li className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"><Link to="#">About me</Link></li>
-                    <li className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"><Link to="/about">Contact</Link></li>
+                    <li className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"><Link to="/skills">Achievements</Link></li>
+                    <li className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"><Link to="/about">About me</Link></li>
+                    <li className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"><Link to="/contact">Contact</Link></li>
                     </ul>
                 </nav>
             </div>
