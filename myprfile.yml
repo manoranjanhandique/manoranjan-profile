@@ -1,0 +1,27 @@
+trigger:
+  branches:
+    include:
+      - master  # Or whichever branch you want to trigger the pipeline on
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '16.x'  # Ensure this matches the Node.js version required by your project
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+  displayName: 'Install npm dependencies'
+
+- script: |
+    npm run build
+  displayName: 'Build React app'
+
+- task: AzureStaticWebApp@0
+  inputs:
+    app_location: '/'  # Root folder where your project is located
+    output_location: 'dist'  # Parcel outputs the build in the dist folder
+    azure_static_web_apps_api_token: $(deployment_token)  # Token from the Static Web App
